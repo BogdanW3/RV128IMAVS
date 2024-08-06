@@ -1,6 +1,6 @@
 Mandatory:
 I                 [ --------
-Zcsr           [ ----
+Zicsr           [ ----
 
 Priority:
 S                [ ----
@@ -8,7 +8,9 @@ S                [ ----
 Optional:
 V                [
 A                [
-F                [
+M                [
+Zba            [
+Zbb            [
+Zicntr	  [ -----
 Zicond        [ -
 Svpbmt       [
-Smrnmi       [
