@@ -1,0 +1,14 @@
+Mandatory:
+I                 [ --------
+Zcsr           [ ----
+
+Priority:
+S                [ ----
+
+Optional:
+V                [
+A                [
+F                [
+Zicond        [ -
+Svpbmt       [
+Smrnmi       [

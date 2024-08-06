@@ -1,0 +1,9 @@
+Not a pipelined processor for now, but 5 stages:
+
+IF - fetch instruction and potentially go right to interrupt or exec depending on the exact fetched instruction
+ID - decode instruction if required, can go to interrupt?
+EX - execute the main bulk of the instruction
+WB - write back the data, and increment the retire counter
+IS - service interrupts, including those caused by the value in the instruction register
+
+If caches are put into the core, which they probably are going to be, prioritisation will have to be re-done inside the core for 2 caches that exist
