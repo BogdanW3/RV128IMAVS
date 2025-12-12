@@ -1816,8 +1816,8 @@ on the Quartus Prime software download page.
 	(port
 		(pt 320 96)
 		(output)
-		(text "MTVAL[127..0]" (rect 0 0 86 13)(font "DejaVu Sans Condensed" (font_size 8)))
-		(text "MTVAL[127..0]" (rect 213 91 299 104)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "MTVEC[127..0]" (rect 0 0 87 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "MTVEC[127..0]" (rect 212 91 299 104)(font "DejaVu Sans Condensed" (font_size 8)))
 		(line (pt 320 96)(pt 304 96)(line_width 3))
 	)
 	(port

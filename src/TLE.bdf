@@ -873,32 +873,6 @@ on the Quartus Prime software download page.
 	(bus)
 )
 (connector
-	(text "ABUS[127..0]" (rect 736 120 799 131)(font "Intel Clear" ))
-	(pt 728 136)
-	(pt 808 136)
-	(bus)
-)
-(connector
-	(text "BR0" (rect 736 152 754 163)(font "Intel Clear" ))
-	(pt 728 168)
-	(pt 808 168)
-)
-(connector
-	(text "BUSYBUS" (rect 736 168 780 179)(font "Intel Clear" ))
-	(pt 728 184)
-	(pt 808 184)
-)
-(connector
-	(text "RD0" (rect 736 184 756 195)(font "Intel Clear" ))
-	(pt 728 200)
-	(pt 808 200)
-)
-(connector
-	(text "WR0" (rect 736 200 758 211)(font "Intel Clear" ))
-	(pt 728 216)
-	(pt 808 216)
-)
-(connector
 	(text "IRQ0" (rect 448 168 472 179)(font "Intel Clear" ))
 	(pt 440 184)
 	(pt 520 184)
@@ -949,12 +923,6 @@ on the Quartus Prime software download page.
 	(bus)
 )
 (connector
-	(text "DBUS[7..0]" (rect 736 136 789 147)(font "Intel Clear" ))
-	(pt 728 152)
-	(pt 808 152)
-	(bus)
-)
-(connector
 	(text "DBUS[7..0]" (rect 489 624 542 635)(font "Intel Clear" ))
 	(pt 480 640)
 	(pt 576 640)
@@ -974,6 +942,38 @@ on the Quartus Prime software download page.
 	(text "CLK" (rect 448 120 466 131)(font "Intel Clear" ))
 	(pt 440 136)
 	(pt 520 136)
+)
+(connector
+	(text "ABUS[127..0]" (rect 728 120 791 131)(font "Intel Clear" ))
+	(pt 720 136)
+	(pt 800 136)
+	(bus)
+)
+(connector
+	(text "BR0" (rect 728 152 746 163)(font "Intel Clear" ))
+	(pt 720 168)
+	(pt 800 168)
+)
+(connector
+	(text "BUSYBUS" (rect 728 168 772 179)(font "Intel Clear" ))
+	(pt 720 184)
+	(pt 800 184)
+)
+(connector
+	(text "RD0" (rect 728 184 748 195)(font "Intel Clear" ))
+	(pt 720 200)
+	(pt 800 200)
+)
+(connector
+	(text "WR0" (rect 728 200 750 211)(font "Intel Clear" ))
+	(pt 720 216)
+	(pt 800 216)
+)
+(connector
+	(text "DBUS[7..0]" (rect 728 136 781 147)(font "Intel Clear" ))
+	(pt 720 152)
+	(pt 800 152)
+	(bus)
 )
 (text "BUS stuff" (rect 104 832 158 846)(font "Intel Clear" (font_size 8)))
 (rectangle (rect 0 808 232 1328))
