@@ -1,0 +1,158 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2023  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+# Date created = 21:28:49  April 03, 2024
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		RISC-V_x128_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Intel recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CGXFC7C6U19A7
+set_global_assignment -name TOP_LEVEL_ENTITY TLE
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 22.1STD.2
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:28:48  APRIL 03, 2024"
+set_global_assignment -name LAST_QUARTUS_VERSION "23.1std.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 125
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "Questa Intel FPGA (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_BOARD_DESIGN_TIMING_TOOL "Stamp (Timing)"
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT STAMP -section_id eda_board_design_timing
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name SEARCH_PATH src/misc
+set_global_assignment -name SEARCH_PATH src/kb
+set_global_assignment -name SEARCH_PATH src/gpu_old
+set_global_assignment -name SEARCH_PATH src/gpu
+set_global_assignment -name SEARCH_PATH src/cpu
+set_global_assignment -name SEARCH_PATH src/cache
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
+set_global_assignment -name NUM_PARALLEL_PROCESSORS 4
+set_global_assignment -name VHDL_FILE src/Misc/RegisterX.vhd
+set_global_assignment -name VHDL_FILE src/Misc/MultiplexerX.vhd
+set_global_assignment -name VHDL_FILE src/Misc/ComparatorX.vhd
+set_global_assignment -name BDF_FILE src/KB/kb_debouncer.bdf
+set_global_assignment -name BDF_FILE src/KB/kb_controller.bdf
+set_global_assignment -name BDF_FILE src/BUS/Arbiter.bdf
+set_global_assignment -name BDF_FILE src/Misc/MX2x64.bdf
+set_global_assignment -name BDF_FILE src/Misc/MX2x128.bdf
+set_global_assignment -name BDF_FILE src/Misc/MX4x64.bdf
+set_global_assignment -name BDF_FILE src/Misc/MX4x128.bdf
+set_global_assignment -name BDF_FILE src/Misc/Watchdog.bdf
+set_global_assignment -name BDF_FILE src/Misc/SCMP16.bdf
+set_global_assignment -name BDF_FILE src/Misc/RisingEdge.bdf
+set_global_assignment -name BDF_FILE src/Misc/REG32_LD_CL.bdf
+set_global_assignment -name BDF_FILE src/Misc/REG16_LD_INC_DEC.bdf
+set_global_assignment -name BDF_FILE src/Misc/REG16_LD_INC_CL.bdf
+set_global_assignment -name BDF_FILE src/Misc/REG16_LD_CL.bdf
+set_global_assignment -name BDF_FILE src/Misc/REG16_INC_DEC.bdf
+set_global_assignment -name BDF_FILE src/Misc/REG16_INC_CL.bdf
+set_global_assignment -name BDF_FILE src/Misc/REG12_LD_CL.bdf
+set_global_assignment -name BDF_FILE src/Misc/REG8_LD_SR.bdf
+set_global_assignment -name BDF_FILE src/Misc/REG8_LD_INC_DEC.bdf
+set_global_assignment -name BDF_FILE src/Misc/REG8_LD_INC_CL.bdf
+set_global_assignment -name BDF_FILE src/Misc/REG8_LD_CL.bdf
+set_global_assignment -name BDF_FILE src/Misc/REG8_INC_DEC.bdf
+set_global_assignment -name BDF_FILE src/Misc/REG8_INC_CL.bdf
+set_global_assignment -name BDF_FILE src/Misc/REG4_LD_SR.bdf
+set_global_assignment -name BDF_FILE src/Misc/REG4_LD_INC_DEC.bdf
+set_global_assignment -name BDF_FILE src/Misc/REG4_LD_INC_CL.bdf
+set_global_assignment -name BDF_FILE src/Misc/REG4_LD_CL.bdf
+set_global_assignment -name BDF_FILE src/Misc/REG4_INC_DEC.bdf
+set_global_assignment -name BDF_FILE src/Misc/REG4_INC_CL.bdf
+set_global_assignment -name BDF_FILE src/Misc/REG2_LD_SR.bdf
+set_global_assignment -name BDF_FILE src/Misc/REG2_LD_INC_DEC.bdf
+set_global_assignment -name BDF_FILE src/Misc/REG2_LD_INC_CL.bdf
+set_global_assignment -name BDF_FILE src/Misc/REG2_LD_CL.bdf
+set_global_assignment -name BDF_FILE src/Misc/REG2_INC_DEC.bdf
+set_global_assignment -name BDF_FILE src/Misc/REG2_INC_CL.bdf
+set_global_assignment -name BDF_FILE src/Misc/MX16x8.bdf
+set_global_assignment -name BDF_FILE src/Misc/MX16x4.bdf
+set_global_assignment -name BDF_FILE src/Misc/MX16x1.bdf
+set_global_assignment -name BDF_FILE src/Misc/MX8x32.bdf
+set_global_assignment -name BDF_FILE src/Misc/MX8x8.bdf
+set_global_assignment -name BDF_FILE src/Misc/MX8x4.bdf
+set_global_assignment -name BDF_FILE src/Misc/MX8x1.bdf
+set_global_assignment -name BDF_FILE src/Misc/MX4x32.bdf
+set_global_assignment -name BDF_FILE src/Misc/MX4x16.bdf
+set_global_assignment -name BDF_FILE src/Misc/MX4x8.bdf
+set_global_assignment -name BDF_FILE src/Misc/MX4x4.bdf
+set_global_assignment -name BDF_FILE src/Misc/MX4x2.bdf
+set_global_assignment -name BDF_FILE src/Misc/MX4x1.bdf
+set_global_assignment -name BDF_FILE src/Misc/MX2x32.bdf
+set_global_assignment -name BDF_FILE src/Misc/MX2x16.bdf
+set_global_assignment -name BDF_FILE src/Misc/MX2x12.bdf
+set_global_assignment -name BDF_FILE src/Misc/MX2x8.bdf
+set_global_assignment -name BDF_FILE src/Misc/MX2x4.bdf
+set_global_assignment -name BDF_FILE src/Misc/MX2x2.bdf
+set_global_assignment -name BDF_FILE src/Misc/MX2x1.bdf
+set_global_assignment -name BDF_FILE src/Misc/DC256.bdf
+set_global_assignment -name BDF_FILE src/Misc/DC128.bdf
+set_global_assignment -name BDF_FILE src/Misc/DC64.bdf
+set_global_assignment -name BDF_FILE src/Misc/DC32.bdf
+set_global_assignment -name BDF_FILE src/Misc/DC16.bdf
+set_global_assignment -name BDF_FILE src/Misc/DC8.bdf
+set_global_assignment -name BDF_FILE src/Misc/DC4.bdf
+set_global_assignment -name BDF_FILE src/Misc/DC2.bdf
+set_global_assignment -name BDF_FILE src/Misc/CMP16.bdf
+set_global_assignment -name BDF_FILE src/Misc/CMP8.bdf
+set_global_assignment -name BDF_FILE src/Misc/CMP4.bdf
+set_global_assignment -name BDF_FILE src/Misc/CMP2.bdf
+set_global_assignment -name BDF_FILE src/Misc/CMP1.bdf
+set_global_assignment -name BDF_FILE src/Misc/CD16.bdf
+set_global_assignment -name BDF_FILE src/Misc/CD8.bdf
+set_global_assignment -name BDF_FILE src/Misc/CD4.bdf
+set_global_assignment -name BDF_FILE src/Misc/CD2.bdf
+set_global_assignment -name BDF_FILE src/Misc/ALU.bdf
+set_global_assignment -name BDF_FILE src/Misc/ADD16.bdf
+set_global_assignment -name BDF_FILE src/Misc/ADD8.bdf
+set_global_assignment -name BDF_FILE src/Misc/ADD4.bdf
+set_global_assignment -name BDF_FILE src/Misc/ADD2.bdf
+set_global_assignment -name BDF_FILE src/Misc/ADD1.bdf
+set_global_assignment -name BDF_FILE src/TLE.bdf
+set_global_assignment -name BDF_FILE src/CPU/Core_x128.bdf
+set_global_assignment -name BDF_FILE src/PLIC/PLIC.bdf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name BDF_FILE src/Cache/ICache.bdf
+set_global_assignment -name BDF_FILE src/CPU/Decoder.bdf

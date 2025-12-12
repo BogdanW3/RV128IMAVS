@@ -8,7 +8,6 @@
 /simulation/
 /db/
 /hc_output
-*.qsf
 *.qdf
 *.ddb
 *.vwf
